@@ -269,6 +269,10 @@ img, video {
   max-width: 36rem;
 }
 
+.touch-manipulation {
+  touch-action: manipulation;
+}
+
 .flex-col {
   flex-direction: column;
 }
