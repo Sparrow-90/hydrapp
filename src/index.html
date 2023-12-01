@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hydrapp</title>
     <link rel="manifest" href="manifest.json">
-    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
-<body class="bg-blue-950">
-    <h1 class="text-3xl font-bold text-blue-50">
-        Hello world!
-    </h1>
+<body class="bg-blue-950 w-full flex min-h-screen justify-center items-center">
+    <main class="w-full max-w-xl flex flex-col justify-center items-center gap-7">
+        <h1 class="text-6xl font-bold text-blue-50 text-center">
+            hydrapp
+        </h1>
+        <img class="max-w-xl" src="./water-glass.svg" alt="water glass">
+        <section class="flex flex-col gap-2 justify-center items-center text-white">
+            <button class="w-56 h-12 bg-white text-black font-bold rounded-sm">dodaj szklankę</button>
+            <button class="w-56 h-12 text-red-700 font-bold">usuń szklankę</button>
+        </section>
+    </main>
 </body>
 </html>
