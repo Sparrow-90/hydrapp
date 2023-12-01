@@ -1,0 +1,20 @@
+{
+  "name": "hydrapp",
+  "version": "1.0.0",
+  "description": "simple app allowing you to track your daily hydration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.10.3"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
