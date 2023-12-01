@@ -3,18 +3,22 @@ const addBtn = document.querySelector('.add--js');
 const removeBtn= document.querySelector('.remove--js');
 
 let countNumber = 0;
-const key = new Date().toISOString().slice(0,10)
+let key = new Date().toLocaleString().slice(0,10);
 
+setInterval(()=>{
+    if(key !== new Date().toLocaleString().slice(0,10)){
+        key = new Date().toLocaleString().slice(0,10);
+        countNumber = 0
+    }
+}, 1000*60)
 
 addBtn.addEventListener('click', ()=>{
-    console.log('działa');
     const addCount = ++countNumber;
     counter.innerHTML = addCount;
     localStorage.setItem(key, countNumber)
 })
 
 removeBtn.addEventListener('click', ()=>{
-    console.log('remove działa');
     if(countNumber === 0 ){
         counter.innerHTML = 0
     }
