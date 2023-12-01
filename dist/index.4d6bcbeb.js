@@ -578,11 +578,19 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 const counter = document.querySelector(".counter--js");
 const addBtn = document.querySelector(".add--js");
 const removeBtn = document.querySelector(".remove--js");
+countNumber = 0;
 addBtn.addEventListener("click", ()=>{
     console.log("dzia\u0142a");
+    const addCount = ++countNumber;
+    counter.innerHTML = addCount;
 });
 removeBtn.addEventListener("click", ()=>{
     console.log("remove dzia\u0142a");
+    if (countNumber == 0) counter.innerHTML = 0;
+    else {
+        const removeCount = --countNumber;
+        counter.innerHTML = removeCount;
+    }
 });
 
 },{}]},["3zq8u","gLLPy"], "gLLPy", "parcelRequire16d4")
