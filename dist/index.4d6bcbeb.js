@@ -579,11 +579,12 @@ const counter = document.querySelector(".counter--js");
 const addBtn = document.querySelector(".add--js");
 const removeBtn = document.querySelector(".remove--js");
 let countNumber = 0;
+const key = new Date().toISOString().slice(0, 10);
 addBtn.addEventListener("click", ()=>{
     console.log("dzia\u0142a");
     const addCount = ++countNumber;
     counter.innerHTML = addCount;
-    localStorage.setItem("count", countNumber);
+    localStorage.setItem(key, countNumber);
 });
 removeBtn.addEventListener("click", ()=>{
     console.log("remove dzia\u0142a");
@@ -592,10 +593,10 @@ removeBtn.addEventListener("click", ()=>{
         const removeCount = --countNumber;
         counter.innerHTML = removeCount;
     }
-    localStorage.setItem("count", countNumber);
+    localStorage.setItem(key, countNumber);
 });
-if (localStorage.getItem("count")) counter.innerHTML = parseInt(localStorage.getItem("count"));
-countNumber = localStorage.getItem("count");
+if (localStorage.getItem(key)) counter.innerHTML = parseInt(localStorage.getItem(key));
+countNumber = localStorage.getItem(key);
 
 },{}]},["3zq8u","gLLPy"], "gLLPy", "parcelRequire16d4")
 
