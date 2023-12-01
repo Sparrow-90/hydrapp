@@ -12,11 +12,16 @@
         <h1 class="text-6xl font-bold text-blue-50 text-center">
             hydrapp
         </h1>
-        <img class="max-w-xl" src="./water-glass.svg" alt="water glass">
+        <secction class="bg-[url('./water-glass.svg')] bg-center bg-no-repeat w-full h-96 flex justify-center items-center">
+            <!-- <img class="max-w-xl" src="./water-glass.svg" alt="water glass"> -->
+            <p class="counter--js text-8xl font-bold">0</p>
+        </secction>
         <section class="flex flex-col gap-2 justify-center items-center text-white">
-            <button class="w-56 h-12 bg-white text-black font-bold rounded-sm">dodaj szklankę</button>
-            <button class="w-56 h-12 text-red-700 font-bold">usuń szklankę</button>
+            <button class="add--js w-56 h-12 bg-white text-black font-bold rounded-sm">dodaj szklankę</button>
+            <button class="remove--js w-56 h-12 text-red-700 font-bold">usuń szklankę</button>
         </section>
     </main>
+
+    <script type="module" src="./main.js"></script>
 </body>
 </html>
